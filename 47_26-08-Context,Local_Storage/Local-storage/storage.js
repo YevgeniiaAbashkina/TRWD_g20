@@ -19,7 +19,7 @@ class Store{
     }
     static remove(item) {
         const allContacts = this.getAll();
-        allContacts.splice(index, 1);
+        allContacts.splice(item, 1);
         if (!allContacts.length === 0) {
             localStorage.removeItem(CONTACTS_KEY)
         } else {
@@ -27,3 +27,4 @@ class Store{
         }
     }
 }
+
