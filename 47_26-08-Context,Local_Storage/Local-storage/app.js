@@ -35,3 +35,13 @@ function onAddContactHandler(event) {
     renderList();
     form.reset();//очистит все формы
 }
+
+right.onclick = removeContact;
+
+function removeContact(event) {
+    if (event.target.tagName === "BUTTON") {
+        const item = event.target.dataset.index;
+        Store.remove(item);
+        renderList()
+    }
+}

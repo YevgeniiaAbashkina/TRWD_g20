@@ -17,4 +17,13 @@ class Store{
     static updateLocalStorage(contacts) {
         localStorage.setItem(CONTACTS_KEY, JSON.stringify(contacts) )
     }
+    static remove(item) {
+        const allContacts = this.getAll();
+        allContacts.splice(index, 1);
+        if (!allContacts.length === 0) {
+            localStorage.removeItem(CONTACTS_KEY)
+        } else {
+            this.updateLocalStorage(allContacts)
+        }
+    }
 }
