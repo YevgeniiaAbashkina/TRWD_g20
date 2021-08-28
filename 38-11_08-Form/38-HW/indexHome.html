@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scriptHome.js" defer></script>
+    <style>
+        .container{
+            background-color: rgb(245, 160, 100);
+        }
+        .wrapper{
+            width: 600px;
+            height: 500px;
+            padding-top: 30px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: rgb(245, 170, 117);
+            border:  1px solid chocolate;
+            box-shadow:  2px 10px 20px rgb(148, 74, 21);
+        }
+        #toDoInput{
+            width: 380px;
+            padding: 10px;
+            margin-bottom: 25px;
+            
+        }
+        #submitBtn{
+            width: 90px;
+            padding: 10px;
+        }
+        ul{
+            float: left;
+        }
+        
+        li{
+            list-style-type: none;
+            
+        }
+
+        .through{
+           text-decoration: line-through; 
+        }
+    </style>
+    <title>Home work #38</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <h1>What should I do today?</h1>
+            <form action="#" id="myForm">
+                <input type="text" id="toDoInput">
+                <input type="submit" id="submitBtn" value="OK">
+                <hr>
+                <ul id="toDoList">
+
+                </ul>
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+body {
+  background-color: rgb(51, 49, 49);
+}
+
+.visiting-card {
+  width: 1000px;
+  height: 580px;
+  margin: 50px auto;
+  text-align: center;
+  _background-color: wheat;
+  position: relative;
+  z-index: 1;
+}
+
+/* foto section */
+.foto-section img {
+  width: 1000px;
+}
+
+/* sidebar section*/
+.sidebar-section {
+  width: 450px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 25px;
+  position: relative;
+  float: right;
+  top: -590px;
+  z-index: 2;
+}
+
+.about-me-section {
+  height: 195px;
+  background-color: white;
+  padding: 50px 40px;
+}
+
+.contact-me-cection {
+  height: 255px;
+  background-color: black;
+  padding: 5px 20px 30px 30px;
+  color: white;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.adresse {
+  font-size: 15px;
+}
+
+.telefon {
+  line-height: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.about-me-section a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+.resource a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}

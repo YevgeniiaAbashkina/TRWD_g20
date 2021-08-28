@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.row-1 {
+  margin: 30px;
+  border: 1px solid blue;
+  display: flex;
+  /* flex-direction: row; */
+  /*   flex-direction: column;
+  flex-direction: column-reverse; */
+  _justify-content: flex-start;
+  _justify-content: center;
+  _justify-content: end;
+  justify-content: space-between;
+  _align-items: stretch;
+  align-items: center;
+}
+
+.row-1 div {
+  _height: 200px;
+  background-color: green;
+  border: 1px solid red;
+  width: 100px;
+}
+
+.row-1 .box1 {
+  _height: 400px;
+}
+
+.row-1 .box2 {
+  _height: 250px;
+  align-self: center;
+}
+
+.row2 {
+  display: flex;
+  _justify-content: space-between;
+  margin-top: 20px;
+  border: 1px solid black;
+  -flex-wrap: wrap;
+}
+
+.card {
+  background-color: red;
+  margin: 15px;
+  height: 150px;
+  _width: 150px;
+  padding: 10px;
+  _width: calc(100% / 4 - 30px);
+  border: 1px solid black;
+  _flex-basis: calc(100% / 4 - 30px);
+  flex-basis: 150px; /* так задавать ширину а не в явном виде */
+}
+.big-card {
+  _height: 150px;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.row3 {
+  margin-top: 50px;
+  border: 1px solid black;
+  display: flex;
+}
+.row3 div {
+  background-color: aqua;
+  height: 60px;
+}
+
+.box.3 {
+  margin-left: auto;
+}
+
+.row3 div::nth-child(2) {
+  margin-right: auto;
+}

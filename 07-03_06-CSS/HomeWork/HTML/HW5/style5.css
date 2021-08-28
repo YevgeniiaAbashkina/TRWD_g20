@@ -1,0 +1,59 @@
+.red-rectangle {
+  width: 1000px;
+  height: 170px;
+  margin: 100px auto;
+  text-align: center;
+  background-color: red;
+  position: relative;
+  z-index: 1;
+}
+
+.car img {
+  width: 700px;
+  margin: 0px 320px;
+  position: relative;
+  z-index: 2;
+  top: -340px;
+}
+
+.text {
+  width: 500px;
+  height: 200px;
+  text-align: center;
+  margin-left: 420px;
+  position: relative;
+  z-index: 3;
+  top: -340px;
+}
+
+.text h1 {
+  font-family: Georgia, Cambria, Cochin, Times, "Times New Roman", serif;
+  font-weight: 200;
+}
+
+.text p {
+  font-weight: 100;
+  line-height: 25px;
+}
+
+a.freepik {
+  color: red;
+  text-decoration: none;
+  border-bottom: 1px solid red;
+}
+
+.text button {
+  width: 150px;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 16px;
+  background-color: white;
+  border: 1px solid red;
+}
+
+a.learn-more {
+  color: black;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: bold;
+}

@@ -1,0 +1,18 @@
+   0 nano myfirstbashscript.sh 
+   1 chmod u+x myfirstbashscript.sh 
+   2 ls -la
+   3 ./myfirstbashscript.sh
+   4 nano myfirstbashscript.sh 
+   5 ls -la
+   6 cat /
+   7 cat /*
+   8 ls -la
+   9 nano myfirstbashscript.sh 
+  10 ./myfirstbashscript.sh
+  11 nano myfirstbashscript.sh 
+  12 ./myfirstbashscript.sh
+  13 nano myfirstbashscript.sh 
+  14 history
+  15 cd /home
+  16 touch /home/history.txt
+  17 history >> /home/history.txt

@@ -1,0 +1,13 @@
+.img {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.btn {
+  margin: 0 auto;
+  text-align: center;
+}
+.img .item {
+  display: none;
+  margin: 10px auto;
+}

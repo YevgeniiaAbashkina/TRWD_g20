@@ -1,0 +1,43 @@
+header {
+  width: 40%;
+  text-align: center;
+  margin: 30px auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  line-height: 0.4rem;
+}
+
+.foto {
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+  border: 5px solid orangered;
+  position: absolute;
+  /*  top: 30px;
+  right: 30px; */
+}
+
+.contakt-box {
+  margin: 150px auto;
+  width: 100wv;
+}
+
+.person {
+  box-sizing: border-box;
+  width: calc(80% / 3 - 50px);
+  margin: 0 25px;
+  padding: 0 20px 20px 20px;
+  height: 180px;
+  border: 1px solid black;
+  border-radius: 10px;
+  float: right;
+  position: relative;
+}
+
+.person h3 {
+  line-height: 0.5rem;
+  font-size: 0.5rem;
+}

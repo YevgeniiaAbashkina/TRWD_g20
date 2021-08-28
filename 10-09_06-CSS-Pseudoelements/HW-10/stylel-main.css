@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+#header {
+  background: url(./images/bg.png) no-repeat;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  max-height: 800px;
+  color: white;
+  position: relative;
+}
+
+.container {
+  width: 800px;
+  _height: 100;
+  margin: 0 auto;
+}
+
+nav {
+  padding: 30px 0;
+  overflow: hidden;
+}
+
+nav img {
+  float: left;
+  width: 60px;
+}
+nav ul {
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  width: 150px;
+  padding: 10px 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0 10px;
+}
+
+nav ul li:hover,
+.sub-menu ul li:hover {
+  background-color: rgba(45, 45, 45, 0.7);
+}
+
+.sub-menu ul {
+  position: absolute;
+  width: 100px;
+  display: none;
+}
+
+.sub-menu ul li {
+  padding: 15px 0;
+}
+
+ul li:hover ul {
+  display: block;
+  margin-top: 10px;
+}
+
+.middle-box {
+  margin-top: 130px;
+  text-align: center;
+}
+
+.middle-box h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.middle-box p {
+  width: 60%;
+  margin: 15px auto;
+}
+
+.buttons {
+  text-align: center;
+  padding: 15px;
+}
+
+.btn {
+  border: 2px solid white;
+  text-decoration: none;
+  width: 150px;
+  display: inline-block;
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: white;
+  margin: 0 20px;
+  _padding: 5px 0;
+  font-size: 0.8rem;
+  line-height: 36px;
+}
+
+.btn img,
+.btn span {
+  vertical-align: middle;
+}
+
+.btn img {
+  margin-right: 5px;
+}
+
+.btn-more {
+  background-color: orange;
+}
+
+.btn:hover {
+  background-color: rgba(255, 166, 0, 0.651);
+}
+
+.btn-message {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background-color: orange;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.btn-message:hover {
+  border: 3px solid white;
+}
+
+/* section 2 */
+
+section.top-section {
+  background: url(./images/bg-new.png) no-repeat fixed;
+  background-size: cover;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  color: white;
+  height: 100vh;
+  max-height: 800px;
+}
+
+.top-section .container {
+  overflow: hidden;
+}
+
+.box-text {
+  display: inline-block;
+  width: 45%;
+}
+
+h1.slogan {
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-top: 60px;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+h1.slogan b {
+  font-weight: 600;
+}
+
+.box-text p {
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+.box-text button {
+  padding: 20px 50px;
+  text-transform: uppercase;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  margin-top: 80px;
+  font-size: 1.5rem;
+}
+
+.top-section .container img {
+  float: right;
+  width: 400px;
+  margin-top: 60px;
+}
+
+.bottom-section {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: orange;
+  padding: 40px 0;
+  position: relative;
+}
+
+.card {
+  float: left;
+  margin: 0 10px;
+  width: calc(100% / 4 - 20px);
+  text-align: center;
+  padding: 30px;
+}
+
+.card img {
+  width: 30%;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.anchor img {
+  width: 60px;
+  border: 3px solid orange;
+  border-radius: 10px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+/* section 3 */
+
+section.review {
+  background-color: rgba(255, 166, 0, 0.356);
+  padding: 50px 0;
+  color: black;
+  height: 100vh;
+  position: relative;
+}
+
+.review .container {
+  overflow: visible;
+}
+
+.review .container h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.review .container p {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto 50px;
+}
+
+.cards {
+  padding: 50px 0;
+  margin: 0 -20px;
+}
+
+.card-r {
+  display: inline-block;
+  margin: 0 20px;
+  width: calc(100% / 3 - 50px);
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 50px 20px 20px;
+  position: relative;
+}
+
+.cards .card-r p {
+  text-align: left;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.card-r img.avatar {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: 6px solid orange;
+  top: -30px;
+  left: -30px;
+  border-radius: 50%;
+}
+
+img.img-link {
+  border: 2px solid orange;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+/* section 4 */
+
+section.red-car {
+  height: 100vh;
+  max-height: 800px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: black;
+  text-align: center;
+  position: relative;
+}
+
+.red-rectangle {
+  width: 800px;
+  height: 150px;
+  border: 1px solid red;
+  background-color: red;
+  margin-top: 100px;
+}
+
+.red-rectangle.car {
+  margin: 0 auto;
+}
+
+.car img {
+  width: 70%;
+  position: relative;
+  top: -50px;
+}
+
+.text {
+  margin-top: 100px;
+}
+
+.text h1 {
+  font-family: Georgia, Cambria, Cochin, Times, "Times New Roman", serif;
+  font-weight: 800;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.text p {
+  font-weight: 100;
+  line-height: 25px;
+  padding: 0 100px;
+  margin-bottom: 20px;
+}
+
+a.freepik {
+  color: red;
+  text-decoration: none;
+  border-bottom: 1px solid red;
+}
+
+.text button {
+  width: 150px;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 16px;
+  background-color: white;
+  border: 1px solid red;
+}
+
+a.learn-more {
+  color: black;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: bold;
+}

@@ -1,0 +1,82 @@
+body {
+  background-color: crimson;
+}
+
+h1,
+h2 {
+  font-size: 36px;
+}
+
+.box {
+  width: 300px;
+  height: 100px;
+  border: 5px solid red;
+  padding: 10px 0 0 10px;
+  margin: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box; /* расстояние рассчитывается внутрь */
+}
+
+.box1 {
+  width: 50%;
+  border: 1px solid blue;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.item {
+  _font-size: 1.5rem;
+  _background-color: darkmagenta;
+}
+
+.item2 {
+  background-color: darkorange;
+}
+
+.item3 {
+  background-color: darksalmon;
+}
+
+.box2 {
+  background-color: cornflowerblue;
+  width: 10vw;
+  height: 100vh;
+}
+
+.box3 img {
+  width: 100px;
+  float: right;
+}
+ul {
+  list-style: none;
+  margin: 0 0 50px;
+  padding: 0;
+}
+
+ul.nav li {
+  float: left;
+  padding: 15px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.product {
+  width: 900px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin: 10px auto;
+}
+
+.itemm {
+  border: 1px solid black;
+  padding: 15px;
+  box-sizing: border-box;
+  width: calc(100% / 3 - 30px);
+  margin: 0 15px;
+  float: left;
+}
+.clear {
+  clear: both; /* отмена флоут */
+}

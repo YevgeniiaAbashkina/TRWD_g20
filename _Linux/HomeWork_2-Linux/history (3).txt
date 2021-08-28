@@ -1,0 +1,24 @@
+   0 cd /home
+   1 touch /home/Abashkina
+   2 date >> /home/Abashkina
+   3 cat /home/Abashkina
+   4 df -h /
+   5 df -h / >> /home/Abashkina
+   6 cat /home/Abashkina
+   7 history | tail -5 >>/home/Abashkina
+   8 cat /home/Abashkina
+   9 cat /proc /cpuinfo
+  10 cat /proc/cpuinfo
+  11 /proc/cpuinfo | grep vendor >> /home/Abashkina
+  12 /proc/cpuinfo | grep vendor 
+  13 cat /proc/cpuinfo | grep vendor 
+  14 cat /proc/cpuinfo | grep vendor >> /home/Abashkina
+  15 cat /home/Abashkina
+  16 vi /home/Abashkina
+  17 cat /home/Abashkina
+  18 ps -ef
+  19 ps -ef | wc -l
+  20 ps -ef | wc -l >> /home/Abashkina
+  21 cat /home/Abashkina
+  22 touch /home/history
+  23 history > /home/history

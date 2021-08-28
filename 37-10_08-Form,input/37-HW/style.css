@@ -1,0 +1,28 @@
+.firstTaskDiv {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  display: inline-block;
+  margin: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  display: inline-block;
+  margin: 10px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(58, 57, 57);
+  display: inline-block;
+  margin: 10px;
+  border-radius: 50%;
+}

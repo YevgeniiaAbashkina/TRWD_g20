@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.wrapper {
+  padding-top: 20px;
+  width: 900px;
+  margin: 0 auto;
+  font-family: Montserrat, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+}
+
+.nav {
+  height: 50px;
+  background-color: rgb(19, 18, 18);
+  display: flex;
+  align-items: center;
+}
+
+#homeBtn,
+#cartBtn {
+  width: 100px;
+  height: 50px;
+  padding: 10px;
+  background-color: rgb(38, 173, 56);
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+li,
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.root {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart {
+  width: 210px;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 30px 0px;
+  background-color: rgba(171, 243, 219, 0.144);
+}
+
+img {
+  width: 100px;
+}
+
+button {
+  padding: 10px;
+  background-color: rgb(38, 173, 56);
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 0;
+
+  border-radius: 5px;
+  border: none;
+}
+
+.cart h2 {
+  color: rgb(38, 173, 56);
+}
+
+.table {
+  border: 1px solid #eee;
+  table-layout: fixed;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: larger;
+}
+.table th {
+  font-weight: bold;
+  padding: 15px;
+  background-color: #222222;
+  border: 1px solid #dddddd;
+  color: white;
+}
+.table td {
+  padding: 25px;
+  border: 1px solid #eee;
+  text-align: left;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+.table tbody tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.sum {
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: red;
+}
+.active,
+.btn:hover {
+  background-color: black;
+}

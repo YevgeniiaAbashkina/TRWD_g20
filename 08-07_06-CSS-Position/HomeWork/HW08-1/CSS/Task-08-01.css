@@ -1,0 +1,110 @@
+* {
+  _box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.header {
+  background: url(./../../images/bg-new.png) no-repeat fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container,
+.bottom {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+nav ul {
+  list-style: none;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+nav ul li {
+  float: left;
+  margin-right: 50px;
+}
+
+a {
+  color: inherit; /* унаследование можно и color="white" */
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.clearfix {
+  clear: both;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-top: 50px;
+  font-weight: lighter;
+  width: 25%;
+}
+h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-top: 50px;
+  font-weight: lighter;
+  width: 40%;
+}
+
+a.button {
+  border: 1px solid white;
+  padding: 20px 50px;
+  border-radius: 10px;
+  margin-top: 60px;
+  display: inline-block;
+}
+
+.mobile img {
+  width: 30%;
+  float: right;
+  margin-right: 200px;
+  position: relative;
+  top: -480px;
+}
+
+.footer {
+  background-color: rgb(241, 163, 16);
+  background-size: cover;
+  width: 100vw;
+  height: 500px;
+  position: absolute;
+}
+
+.bottom {
+  padding: 100px 0;
+  margin: 0 auto;
+}
+
+.card {
+  float: left;
+  margin: 0 15px;
+  width: calc(90% / 4 - 30px);
+  text-align: center;
+  font-weight: 100;
+  line-height: 1.5rem;
+  padding: 10px 5px;
+}
+
+.card img {
+  width: 30%;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.card h3 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}

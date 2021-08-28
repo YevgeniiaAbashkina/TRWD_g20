@@ -1,0 +1,38 @@
+.left {
+  width: 550px;
+  height: 100vh;
+  float: left;
+}
+
+img.left-picture {
+  width: 600px;
+  height: 100vh;
+}
+
+.right {
+  text-align: center;
+  width: 600px;
+  box-sizing: border-box;
+  margin: 50px;
+  padding: 40px;
+  float: right;
+}
+
+img.right-picture {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  align-items: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-top: 40px;
+}
+
+.right p,
+h1 {
+  font-family: Noto Sans TC, Arial, Helvetica, sans-serif;
+  line-height: 30px;
+}

@@ -1,0 +1,86 @@
+p {
+  text-align: center !important; /* самое важное */
+}
+
+* {
+  font-style: italic;
+}
+
+#my-body {
+  background-color: chartreuse;
+  color: blue;
+  font-family: Roboto, sans-serif;
+}
+
+body.bd {
+  background-color: blueviolet;
+}
+
+.simple-text {
+  font-style: normal;
+  color: brown;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+#last {
+  font-size: 24px;
+}
+
+h1,
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.text {
+  font: italic bold 20px "Courier New", Courier, monospace;
+}
+
+.text {
+  text-align: left !important;
+  line-height: 1.7; /* расстояние между стрчками */
+}
+
+.text span {
+  text-decoration: underline wavy;
+}
+
+span.wavy {
+  text-decoration: underline wavy;
+}
+
+.wavy {
+  text-decoration: underline wavy;
+}
+
+.box {
+  width: 600px;
+  height: 600px;
+  /*background-image: url(../04-31_05-HTML-Table/HomeWork/img/klipartz.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;*/
+  background: aquamarine url(../04-31_05-HTML-Table/HomeWork/img/klipartz.png)
+      no-repeat 20%,
+    50%;
+  background-size: 20%;
+}
+
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-image: url(../04-31_05-HTML-Table/HomeWork/img/klipartz.png);
+  background-color: aquamarine;
+  background-size: cover;
+  border-radius: 50%;
+  border: 5px solid blue;
+}

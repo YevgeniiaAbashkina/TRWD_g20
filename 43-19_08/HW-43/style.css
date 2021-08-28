@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.wrapper {
+  padding-top: 20px;
+  width: 900px;
+  margin: 0 auto;
+  font-family: Montserrat, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+}
+
+ul {
+  font-size: 0px;
+}
+.nav {
+  height: 50px;
+  background-color: rgb(39, 38, 38);
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#contactsBtn,
+#newBtn {
+  width: fit-content;
+  height: 50px;
+  padding: 10px;
+  background-color: rgb(38, 173, 56);
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+li,
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+/* contactsBox section */
+.contactsSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactsBox {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-bottom: 2px solid grey;
+  height: 100px;
+}
+
+.contactsBox:hover {
+  background-color: rgb(91, 226, 109);
+}
+
+.contactsBox h2 {
+  margin-bottom: 20px;
+}
+
+.contactsBox p {
+  font-size: 0.8rem;
+}
+
+.contactsBox img {
+  width: 20px;
+  align-self: center;
+  padding-top: 20px;
+}
+
+.fullInfoSection {
+  width: 45%;
+  padding: 20px 50px;
+
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: rgba(95, 158, 160, 0.171);
+}
+
+.fullInfo {
+  display: flex;
+}
+
+.fullInfo img {
+  width: 20px;
+  justify-self: left;
+  margin: 10px 0;
+}
+.imgBox,
+.infoBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.fullInfo p {
+  margin: 10px;
+  justify-self: left;
+}
+
+/* add-new-contact-section */
+
+.add-new-contact-section {
+  width: 60%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-new-contact-section input {
+  margin-bottom: 20px;
+  height: 40px;
+  border: 2px solid rgb(38, 173, 56);
+  border-radius: 10px;
+  padding-left: 20px;
+  outline: none;
+}
+
+.add-new-contact-section #add {
+  width: 70px;
+  padding: 10px;
+  background-color: rgb(38, 173, 56);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  align-self: flex-end;
+}
+.add-new-contact-section #add:hover {
+  background-color: rgb(91, 226, 109);
+  cursor: pointer;
+}
+
+#newBtn:hover {
+  background-color: rgb(91, 226, 109);
+  cursor: pointer;
+}
+
+#contactsBtn:hover {
+  background-color: rgb(91, 226, 109);
+  cursor: pointer;
+}
+
+#contactsBtn.active {
+  background-color: black;
+}
