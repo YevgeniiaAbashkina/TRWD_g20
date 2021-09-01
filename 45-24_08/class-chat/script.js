@@ -29,6 +29,8 @@ leftBox.classList.add("hide");
 const rightBox = document.querySelector(".right");
 rightBox.classList.add("hide");
 
+
+
 const users = [
     new User ("Vasya Pupkin",  "Berlin"), //-->id
     new User("Ivan Pupkin",  "Moscow"),
@@ -46,7 +48,7 @@ const renderUserList = (array) => {
 
 renderUserList(users);
 
-const messages = [
+let messages = [
     new Message(1, "Hello everybody!", "Who did all the tasks for CSS?", new Date().toLocaleDateString()),
     new Message(0, "Hello!", "I have done!))", new Date().toLocaleDateString()),
     new Message(2, "Hello, Vasya!", "I haven't done...",  new Date().toLocaleDateString()),
@@ -73,6 +75,21 @@ userList.onclick = (event) => {
         leftBox.innerHTML = (userMessages.length) ? userMessages.map(item => item.renderMessage()).join("") : `<p>"No message"</p>`;
         leftBox.classList.remove("hide");
         rightBox.classList.add("hide");
+///////////////////////////////////////////////////////////       
+    const sendBtn = document.querySelector("#sendBtn");
+    const inputNewMessage = document.querySelector("#userNewMessage");
+    
+    sendBtn.onclick = (event)=>{
+        event.preventDefault();
+        let newMessage = inputNewMessage.value;
+        
+        leftBox.innerHTML += `
+        <div  class="message">
+            <h5>${newMessage}<h5>
+            <p>Published: ${new Date().toLocaleDateString()}</p>
+        </div>
+        `
+        }
     }
 }
 
@@ -90,9 +107,12 @@ leftBox.onclick = (event) => {
     if (message) rightBox.classList.remove("hide");
     rightBox.innerHTML=(message)? message.renderFullInfo() : '';
     //console.log(message)
-    
+        
 }
 
 function findUserById(id) {
     return users.find(user => user.id === id);//.city
 }
+
+
+  
