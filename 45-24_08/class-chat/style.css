@@ -44,6 +44,40 @@
   box-shadow: 0 0 20px 5px rgba(61, 50, 50, 0.253);
 }
 
+.message p:last-child {
+  font-size: 0.7rem;
+  margin-top: 15px;
+  text-align: end;
+  font-style: italic;
+}
+
+#userNewMessage {
+  margin: 15px 0 10px;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  color: brown;
+  max-block-size: 100;
+}
+
+#sendBtn {
+  padding: 7px;
+  background-color: rgba(190, 84, 46, 0.63);
+  border-radius: 5px;
+  font-weight: 600;
+  color: rgb(100, 26, 26);
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.fullInfo h5 {
+  margin: 15px 0;
+  text-align: right;
+  font-style: italic;
+}
+
 .hide {
   display: none;
 }
