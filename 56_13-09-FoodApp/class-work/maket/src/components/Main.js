@@ -16,7 +16,7 @@ export default class Main extends React.Component{
 
     changeCurrentMeal=(id)=>{
         const meals=this.state.meals
-        const index=this.state.meals.findIndex(meal=> meal.idMeal===id)
+        const index=meals.findIndex(meal=> meal.idMeal===id)
         const meal={...meals[index]};
         this.setState({...this.state, currentMeal: meal})
     }
