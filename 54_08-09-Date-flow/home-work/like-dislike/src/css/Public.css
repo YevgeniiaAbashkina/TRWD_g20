@@ -1,0 +1,12 @@
+.public h2, p{
+    font-size: 1.6rem;
+    text-align:justify;
+}
+
+.public h4{
+    text-align: left;
+}
+
+.public h5{
+    text-align: end;
+}

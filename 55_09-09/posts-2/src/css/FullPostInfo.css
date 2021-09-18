@@ -1,0 +1,17 @@
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.full-info{
+ padding: 20px;
+ margin: 30px;
+}
+
+button{
+    padding: 15px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}

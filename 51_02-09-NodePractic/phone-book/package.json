@@ -1,0 +1,19 @@
+{
+  "name": "phone-book",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development"
+  },
+  "keywords": [],
+  "author": "Abashkina",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^5.51.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.8.0"
+  }
+}
