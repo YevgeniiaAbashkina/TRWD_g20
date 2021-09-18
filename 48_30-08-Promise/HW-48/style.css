@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+  padding-top: 100px;
+  
+}
+
+.user-list {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.wrapper{
+  padding-bottom: 20px;
+  border: dotted 2px black;
+}
+
+span{
+  font-style: italic;
+}
+
+.new-color{
+  color:crimson;
+}

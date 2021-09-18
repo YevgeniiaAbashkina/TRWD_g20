@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.container{
+    padding-top: 50px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.user-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.item{
+    flex-basis: calc(100%/5 - 20px);
+    margin: 10px;
+    text-align: left;
+    background-color: rgba(113, 158, 68, 0.575);
+    padding: 20px 5px;
+}
+
+.todoBox{
+width: 400px;
+margin: 40px auto;
+background-color: rgba(93, 134, 52, 0.521);
+padding: 10px;
+}
+
+.todo-list{
+    margin: 20px auto;
+    text-align: center;
+}
