@@ -2,12 +2,13 @@ import React from 'react';
 import Categories from './Categories';
 import Meals from './Meals';
 import MealsApi from "../store/data";
+import SearchInput from './SearchInput';
 
 export const CategorieContext=React.createContext()
 
 class Main extends React.Component {
   state={
-    allCategory: MealsApi.getCategories(),
+    
     currentCategorie: null
   } 
 
@@ -16,9 +17,7 @@ class Main extends React.Component {
     this.setState({...this.state, currentCategorie: category})
   }
 
-  hideAllCategory=()=>{
-    this.setState({...this.state, allCategory: []})
-  }
+  
 
 
   render() {
@@ -28,14 +27,14 @@ class Main extends React.Component {
         changeCategorie:this.changeCategorie
       }}>
         <div className="container my-5">
+          <SearchInput />
           <Categories />
         </div>
-        </CategorieContext.Provider>
+      </CategorieContext.Provider>
         <div className="container my-5">
           {this.state.currentCategorie ? 
           <Meals category={this.state.currentCategorie}/> :        
           null}
-          
         </div>
     </>
     );
