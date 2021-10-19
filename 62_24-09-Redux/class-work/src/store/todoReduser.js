@@ -25,7 +25,10 @@ export default function todoReducer(state =init, {type, payload}){
                 ...state,
                 todos:[...tmpTodo]
             }
+<<<<<<< HEAD
         default:
             return state;
+=======
+>>>>>>> e3b0d38f0ea0b6e3896945e71737e5009f906d4e
     }
 }

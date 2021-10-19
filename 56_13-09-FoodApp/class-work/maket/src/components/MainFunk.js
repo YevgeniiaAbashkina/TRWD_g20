@@ -18,7 +18,7 @@ export default function MainFunk(){
     } */
 
     const changeCurrentMeal=(id)=>{
-        const index=this.state.meals.findIndex(meal=> meal.idMeal===id)
+        const index=meals.findIndex(meal=> meal.idMeal===id)
         const meal={...meals[index]};
         setCurrentMeal(meal)
     }

@@ -1,13 +1,15 @@
 import React from 'react';
 import Categories from './Categories';
-//import Meals from './Meals';
+import Meals from './Meals';
+import MealsApi from "../store/data";
+import SearchInput from './SearchInput';
 
 export const CategorieContext=React.createContext()
 
 class Main extends React.Component {
   state={
-    //isShow:true
-    currentCategorie:null
+    
+    currentCategorie: null
   } 
 
   changeCategorie=(category)=>{
@@ -15,18 +17,25 @@ class Main extends React.Component {
     this.setState({...this.state, currentCategorie: category})
   }
 
+  
+
 
   render() {
     return (
     <>
-    <CategorieContext.Provider value={{
-      changeCountry:this.changeCountry
-    }}>
-      <div className="container my-5">
-        <Categories />
-      </div>
+      <CategorieContext.Provider value={{
+        changeCategorie:this.changeCategorie
+      }}>
+        <div className="container my-5">
+          <SearchInput />
+          <Categories />
+        </div>
       </CategorieContext.Provider>
-      
+        <div className="container my-5">
+          {this.state.currentCategorie ? 
+          <Meals category={this.state.currentCategorie}/> :        
+          null}
+        </div>
     </>
     );
   }
@@ -34,7 +43,3 @@ class Main extends React.Component {
 }
 
 export default Main;
-
-/* <div className="container my-5">
-        {this.state.currentCategorie ? <Meals category={this.state.currentCategorie}/> :null}
-      </div> */

@@ -12,15 +12,17 @@ export default class Categories extends React.Component{
 
     componentDidMount() {
 		MealsApi.getCategories()
-			.then(data =>  { this.setState({ ...this.state,  countries: [...data.meals] })})
+			.then(data =>  { this.setState({ ...this.state,  categories: [...data.categories] })})
 			.catch((error) => {
 				this.setState({ ...this.state, error: error.message })
 				})
+                
 	}
 
     renderСategories(){
         return(
             <>
+            <h1 className="mb-4">Choose a category</h1>
                 {this.state.error ? 
                 <Error message={this.state.error} /> : 
                 this.state.categories.map(category => 

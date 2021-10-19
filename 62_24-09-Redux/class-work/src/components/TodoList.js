@@ -9,9 +9,15 @@ const TodoList=({todos, changeStatus, removeTodo})=>{
                 return(
                 <li key={index}>
                     <TodoRow todo={todo}
+<<<<<<< HEAD
                     index={index}
                     changeStatus={changeStatus}
                     removeTodo={removeTodo}/>
+=======
+                     index={index}
+                     changeStatus={changeStatus}
+                     removeTodo={removeTodo}/>
+>>>>>>> e3b0d38f0ea0b6e3896945e71737e5009f906d4e
                 </li>
                 )
             })}
